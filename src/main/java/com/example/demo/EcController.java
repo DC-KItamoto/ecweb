@@ -17,9 +17,10 @@ public class EcController {
 		model.addAttribute("login", "Login");
 		return "login/input";
 	}
+
 	@RequestMapping("/confirm")
-	public String confirm(Users users,Model model) {
-		model.addAttribute("title","確認");
+	public String confirm(Users users, Model model) {
+		model.addAttribute("title", "確認");
 		return "login/confirm";
 	}
 }
