@@ -7,6 +7,7 @@ public class Users {
 	private String name;
 	private String password;
 	
+	public Users() {};
 	
 	public String getEmail() {
 		return email;

@@ -6,6 +6,8 @@ public class EntUsers {
 	private String name;
 	private String password;
 	
+	public EntUsers() {};
+	
 	public String getEmail() {
 		return email;
 	}

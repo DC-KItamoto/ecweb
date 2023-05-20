@@ -10,4 +10,10 @@ public class EcController {
 		model.addAttribute("message","Hello world");
 		return "index";
 	}
+	
+	@RequestMapping("/login")
+	public String login(Users users,Model model) {
+		model.addAttribute("login","Login");
+		return "login/input";
+	}
 }
