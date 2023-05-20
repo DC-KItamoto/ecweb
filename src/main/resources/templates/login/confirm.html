@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--Thymeleafを利用する宣言-->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Login</title>
+	<meta charset="utf-8" />
+</head>
+
+<body>
+	<h1 th:text="${title}"></h1>
+
+	<div th:object="${users}">
+		<p th:text="*{name}">名前</p>
+		<p th:text="*{email}">email</p>
+		<p th:text="*{password}">password</p>
+	</div>
+</body>
+
+</html>
