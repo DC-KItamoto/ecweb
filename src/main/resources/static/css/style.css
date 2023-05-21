@@ -45,17 +45,6 @@ color: #4A7055;
     font-size: 28px;
     line-height: 34px;
 }
-.Form_Logintext{
-    margin-top: 75px;
-    margin-bottom: 45px;
-    font-family: 'Happy Monkey';
-    font-style: normal;
-    font-weight: var( --font-waight);
-    font-size: 28px;
-    line-height: 34px;
-    color: var(--fontcolor);
-    text-align: center;
-}
 .Form_Name.Form_Email.Form_Password{
     margin-bottom: 15px;
     font-family: 'Happy Monkey';
@@ -93,5 +82,26 @@ transition: 0.3s ease;
 .button:hover{
     background: rgb(137, 255, 161);
     transition: 0.3s ease;
+}
+.AccountmakeLink{
+    text-align: center;
+    font-family: 'Happy Monkey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+}
+.Fontcolor_Red{
+    color: var(--fontcolor-red);
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Fontcolor_Red:hover{
+    color: var(--fontcolor-red);
+    font-weight: var(--font-waight);
+    margin-left: 5px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 

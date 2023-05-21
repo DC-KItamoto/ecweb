@@ -1,6 +1,7 @@
 :root {
     --backgroundcolor: #EFF9F1;
     --fontcolor:#000000;
+    --fontcolor-red: #FF6262;
     --box-shadow:2px 5px 4px 0px #0000002E;
     --border: 1px solid #0000001A;
     --font-waight:800;
