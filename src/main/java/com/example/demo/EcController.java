@@ -24,21 +24,21 @@ public class EcController {
 
 	@RequestMapping("/confirm")
 	public String confirm(Users user, Model model) {
-		model.addAttribute("title", "確認");
+		model.addAttribute("title", "Eccom");
 		return "login/confirm";
 	}
-	
-	//SampleDaoの用意
+
+	// SampleDaoの用意
 	private final UsersDao usersdao;
 
 	@Autowired
 	public EcController(UsersDao usersdao) {
 		this.usersdao = usersdao;
 	}
-	
+
 	@RequestMapping("/submit")
-	public String submit(Users user,Model model) {
-		model.addAttribute("message","登録完了！");
+	public String submit(Users user, Model model) {
+		model.addAttribute("message", "登録完了！");
 		EntUsers entuser = new EntUsers();
 		entuser.setName(user.getName());
 		entuser.setEmail(user.getEmail());
@@ -46,5 +46,5 @@ public class EcController {
 		usersdao.insertDb(entuser);
 		return "index";
 	}
-	
+
 }

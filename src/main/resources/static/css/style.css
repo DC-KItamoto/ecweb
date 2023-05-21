@@ -45,10 +45,23 @@ color: #4A7055;
     font-size: 28px;
     line-height: 34px;
 }
-.Form_Name.Form_Email.Form_Password{
+.Form_Name{
     margin-bottom: 15px;
-    font-family: 'Happy Monkey';
-    font-weight: var( --font-waight);
+    font-weight: var( --font-waight6);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--fontcolor);
+}
+.Form_Email{
+    margin-bottom: 15px;
+    font-weight: var( --font-waight6);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--fontcolor);
+}
+.Form_Password{
+    margin-bottom: 15px;
+    font-weight: var( --font-waight6);
     font-size: 16px;
     line-height: 19px;
     color: var(--fontcolor);
