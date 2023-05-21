@@ -23,4 +23,6 @@ public class EcController {
 		model.addAttribute("title", "確認");
 		return "login/confirm";
 	}
+	
+	
 }
