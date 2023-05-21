@@ -5,10 +5,13 @@
 <title>Hello</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" th:href="@{css/style.css}">
+	<link rel="stylesheet" th:href="@{css/style.css}">
+	<link rel="stylesheet" th:href="@{css/reset.css}">
+	<link rel="stylesheet" th:href="@{css/variable.css}">
 </head>
 <body>
 	
-	<h1 th:text="${message}"></h1>
-	<a href="login/input.html" th:href="@{/login}">Let's Login!</a>
+	<h1 class="Title" th:text="${message}"></h1>
+	<a class="button" href="login/input.html" th:href="@{/login}">Let's Login!</a>
 </body>
 </html>

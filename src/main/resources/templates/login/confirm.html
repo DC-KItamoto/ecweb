@@ -11,10 +11,11 @@
 </head>
 
 <body>
-	<h1 th:text="${title}"></h1>
+	<h1  class="Title" th:text="${title}"></h1>
 	<!--入力内容確認-->
 	<section class="Form" th:object="${users}">
-		<ul>
+		<h2 class="Form_accountmake">登録</h2>
+		<ul class="Form_Box">
 			<li class="Form_Name" th:text="*{name}">名前</li>
 			<li class="Form_Email" th:text="*{email}">email</li>
 			<li class="Form_Password" th:text="*{password}">password</li>
@@ -24,14 +25,14 @@
 			<input type="hidden" name="name" th:value="*{name}">
 			<input type="hidden" name="email" th:value="*{email}">
 			<input type="hidden" name="password" th:value="*{password}">
-			<input type="submit" value="書き直す">
+			<input class="button" type="submit" value="書き直す">
 		</form>
 		<!--入力内容確定の場合登録-->
 		<form method="get" action="#" th:action="@{/submit}">
 			<input type="hidden" name="name" th:value="*{name}">
 			<input type="hidden" name="email" th:value="*{email}">
 			<input type="hidden" name="password" th:value="*{password}">
-			<input type="submit" value="登録">
+			<input class="button" type="submit" value="登録">
 		</form>
 	</section>
 </body>
