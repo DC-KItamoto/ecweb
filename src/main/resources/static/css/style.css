@@ -1,120 +1,167 @@
 @charset "UTF-8";
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: content-box;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
 }
+
 @font-face {
-    font-family: 'Happy Monkey';  /* 任意のフォント名 */
-    src: url("../fontdata/HappyMonkey-Regular.woff2")format('woff2');
-}
-body{
-    background-color: var(--backgroundcolor);
-}
-.Title{
-    margin-top: 25px;
-    margin-bottom: 25px;
- text-align: center;   
- font-family: 'Happy Monkey';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 77px;
-
-color: #4A7055;
-}
-.Form{
-    width: 450px;
-    background-color: var(--backgroundcolor);
-    margin: 0 auto;
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--box-shadow);
-    border: var(--border);
-}
-.Form_accountmake{
-    margin-top: 60px;
-    margin-bottom: 45px;
-    color: var(--fontcolor);
-    text-align: center;
-    font-family: 'Happy Monkey';
-    font-style: normal;
-    font-weight: var( --font-waight);
-    font-size: 28px;
-    line-height: 34px;
-}
-.Form_Name{
-    margin-bottom: 15px;
-    font-weight: var( --font-waight6);
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--fontcolor);
-}
-.Form_Email{
-    margin-bottom: 15px;
-    font-weight: var( --font-waight6);
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--fontcolor);
-}
-.Form_Password{
-    margin-bottom: 15px;
-    font-weight: var( --font-waight6);
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--fontcolor);
-}
-.Form_Box{
-    width: 330px;
-    margin: 0 auto;
-}
-.input{
-    margin-bottom: 25px;
-    width: 350px;
-    height: 33px;
-    background: rgba(6, 6, 6, 0.03);
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-.button{
-    display: block;
-    width: 140px;
-    height: 35px;
-    margin: 0 auto;
-    margin-top: 45px;
-    margin-bottom: 65px;
-    color: var(--fontcolor);
-background: rgba(15, 239, 60, 0.28);
-border: 0px solid rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-cursor: pointer;
-transition: 0.3s ease;
-}
-.button:hover{
-    background: rgb(137, 255, 161);
-    transition: 0.3s ease;
-}
-.AccountmakeLink{
-    text-align: center;
-    font-family: 'Happy Monkey';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 19px;
-}
-.Fontcolor_Red{
-    color: var(--fontcolor-red);
-    margin-left: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.Fontcolor_Red:hover{
-    color: var(--fontcolor-red);
-    font-weight: var(--font-waight);
-    margin-left: 5px;
-    transition: 0.3s;
-    cursor: pointer;
+	font-family: 'Happy Monkey';
+	/* 任意のフォント名 */
+	src: url("../fontdata/HappyMonkey-Regular.woff2")format('woff2');
 }
 
+body {
+	background-color: var(--backgroundcolor);
+}
+
+.Title {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+	font-family: 'Happy Monkey';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 77px;
+
+	color: #4A7055;
+}
+
+.Form {
+	width: 450px;
+	background-color: var(--backgroundcolor);
+	margin: 0 auto;
+	display: block;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: var(--box-shadow);
+	border: var(--border);
+}
+
+.Form_accountmake {
+	margin-top: 60px;
+	margin-bottom: 45px;
+	color: var(--fontcolor);
+	text-align: center;
+	font-family: 'Happy Monkey';
+	font-style: normal;
+	font-weight: var(--font-waight);
+	font-size: 28px;
+	line-height: 34px;
+}
+
+.Form_Name {
+	margin-bottom: 15px;
+	font-weight: var(--font-waight6);
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--fontcolor);
+}
+
+.Form_Email {
+	margin-bottom: 15px;
+	font-weight: var(--font-waight6);
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--fontcolor);
+}
+
+.Form_Password {
+	margin-bottom: 15px;
+	font-weight: var(--font-waight6);
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--fontcolor);
+}
+
+.Form_Box {
+	width: 330px;
+	margin: 0 auto;
+}
+
+.input {
+	margin-bottom: 25px;
+	width: 350px;
+	height: 33px;
+	background: rgba(6, 6, 6, 0.03);
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+
+.button {
+	display: block;
+	width: 140px;
+	height: 35px;
+	margin: 0 auto;
+	margin-top: 45px;
+	margin-bottom: 65px;
+	color: var(--fontcolor);
+	background: rgba(15, 239, 60, 0.28);
+	border: 0px solid rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.button:hover {
+	background: rgb(137, 255, 161);
+	transition: 0.3s ease;
+}
+
+.AccountmakeLink {
+	text-align: center;
+	font-family: 'Happy Monkey';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 19px;
+}
+
+.AccountmakeLinkAnounce {
+	text-align: center;
+	font-family: 'Happy Monkey';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 19px;
+	margin-top: 45px;
+	margin-bottom: 18px;
+}
+
+.Accountmake {
+	display: block;
+	font-family: 'Happy Monkey';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 19px;
+	width: 330px;
+	margin-top: 45px;
+	margin: 0 auto;
+}
+
+.Accountmake_button{
+	cursor: pointer;
+	width: 330px;
+	background: rgba(255, 255, 255, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+
+.Fontcolor_Red {
+	color: var(--fontcolor-red);
+	margin-left: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.Fontcolor_Red:hover {
+	color: var(--fontcolor-red);
+	font-weight: var(--font-waight);
+	margin-left: 5px;
+	transition: 0.3s;
+	cursor: pointer;
+}

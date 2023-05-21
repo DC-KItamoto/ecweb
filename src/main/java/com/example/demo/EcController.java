@@ -11,8 +11,9 @@ import com.example.demo.entity.EntUsers;
 @Controller
 public class EcController {
 	@RequestMapping("/index")
-	public String top(Model model) {
-		model.addAttribute("message", "Hello world");
+	public String top(Model model,Users users) {
+		model.addAttribute("message", "Eccom");
+		model.addAttribute("logMessa", "ログイン");
 		return "index";
 	}
 
@@ -38,7 +39,8 @@ public class EcController {
 
 	@RequestMapping("/submit")
 	public String submit(Users user, Model model) {
-		model.addAttribute("message", "登録完了！");
+		model.addAttribute("message", "Eccom");
+		model.addAttribute("logMessa", "登録完了");
 		EntUsers entuser = new EntUsers();
 		entuser.setName(user.getName());
 		entuser.setEmail(user.getEmail());

@@ -23,7 +23,7 @@
 		<p class="Form_Password">パスワード</p>
 		<input  class="input" type="password" name="password" th:value="*{password}" >
 	</div>
-		<a href="#"><p class="AccountmakeLink">すでにアカウントをお持ちですか？<span class="Fontcolor_Red">サインイン</span></p></a>
+		<a href="#" th:href="@{/index}"><p class="AccountmakeLink">すでにアカウントをお持ちですか？<span class="Fontcolor_Red">サインイン</span></p></a>
 		<input class="button" type="submit" value="次へ進む">
 	</form>
 </body>
