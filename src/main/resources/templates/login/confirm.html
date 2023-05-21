@@ -10,12 +10,28 @@
 
 <body>
 	<h1 th:text="${title}"></h1>
-
-	<div th:object="${users}">
-		<p th:text="*{name}">名前</p>
-		<p th:text="*{email}">email</p>
-		<p th:text="*{password}">password</p>
-	</div>
+	<!--入力内容確認-->
+	<section class="Form" th:object="${users}">
+		<ul>
+			<li class="Form_Name" th:text="*{name}">名前</li>
+			<li class="Form_Email" th:text="*{email}">email</li>
+			<li class="Form_Password" th:text="*{password}">password</li>
+		</ul>
+		<!--入力内容変更の場合loginへ戻す-->
+		<form method="get" action="#" th:action="@{/login}">
+			<input type="hidden" name="name" th:value="*{name}">
+			<input type="hidden" name="email" th:value="*{email}">
+			<input type="hidden" name="password" th:value="*{password}">
+			<input type="submit" value="書き直す">
+		</form>
+		<!--入力内容確定の場合登録-->
+		<form method="get" action="#" th:action="@{/submit}">
+			<input type="hidden" name="name" th:value="*{name}">
+			<input type="hidden" name="email" th:value="*{email}">
+			<input type="hidden" name="password" th:value="*{password}">
+			<input type="submit" value="登録">
+		</form>
+	</section>
 </body>
 
 </html>
