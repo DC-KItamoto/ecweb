@@ -14,7 +14,7 @@ public class EcController {
 
 	@RequestMapping("/login")
 	public String login(Users users, Model model) {
-		model.addAttribute("login", "Login");
+		model.addAttribute("login", "Eccom");
 		return "login/input";
 	}
 
@@ -23,6 +23,5 @@ public class EcController {
 		model.addAttribute("title", "確認");
 		return "login/confirm";
 	}
-	
-	
+
 }

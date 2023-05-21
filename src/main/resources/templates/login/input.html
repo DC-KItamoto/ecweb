@@ -6,17 +6,24 @@
 	<title>Login</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" th:href="@{css/style.css}">
+	<link rel="stylesheet" th:href="@{css/reset.css}">
+	<link rel="stylesheet" th:href="@{css/variable.css}">
 </head>
 
 <body>
 	<h1 class="Title" th:text="${login}"></h1>
 
 	<form class="Form" method="get" action="#" th:action="@{/confirm}" th:object="${users}">
-		<h2 class="Logintext">ログイン</h2>
-		<p>名前：<input type="text" name="name" th:value="*{name}" ></p>
-		<p>email：<input type="email" name="email" th:value="*{email}" ></p>
-		<p>password : <input type="text" name="password" th:value="*{password}" ></p>
-		<input type="submit" value="送信">
+		<h2 class="Form_accountmake">アカウント作成</h2>
+		<div class="Form_Box">
+		<p class="Form_Name">ユーザー名</p>
+		<input class="input" type="text" name="name" th:value="*{name}" >
+		<p  class="Form_Email">メールアドレス</p>
+		<input  class="input" type="email" name="email" th:value="*{email}" >
+		<p class="Form_Password">パスワード</p>
+		<input  class="input" type="text" name="password" th:value="*{password}" >
+	</div>
+		<input class="button" type="submit" value="次へ進む">
 	</form>
 </body>
 
