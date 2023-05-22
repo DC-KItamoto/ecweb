@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--Thymeleafを利用する宣言-->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Hello</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" th:href="@{css/style.css}">
+	<link rel="stylesheet" th:href="@{css/reset.css}">
+	<link rel="stylesheet" th:href="@{css/variable.css}">
+</head>
+
+<body>
+
+	<h1 class="Title" th:text="${message}"></h1>
+	<form method="get" action="#" th:action="@{/index}" th:each="res:${user}">
+		<h1 class="Form_accountmake" th:text="${res.name}"></h1>
+		<h2 class="Form_accountmake" th:text="${logMessa}">ログイン</h2>
+		
+		<input class="button" type="submit" value="ログアウト">
+	</form>
+</body>
+
+</body>
+
+</html>

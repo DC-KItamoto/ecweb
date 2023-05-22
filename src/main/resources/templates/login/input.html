@@ -17,14 +17,14 @@
 		<h2 class="Form_accountmake">アカウント作成</h2>
 		<div class="Form_Box">
 		<p class="Form_Name">ユーザー名</p>
-		<input class="input" type="text" name="name" th:value="*{name}" >
+		<input class="input" type="text" name="name" th:value="*{name}" required="required">
 		<p  class="Form_Email">メールアドレス</p>
-		<input  class="input" type="email" name="email" th:value="*{email}" >
+		<input  class="input" type="email" name="email" th:value="*{email}" required="required">
 		<p class="Form_Password">パスワード</p>
-		<input  class="input" type="password" name="password" th:value="*{password}" >
+		<input  class="input" type="password" name="password" th:value="*{password}" required="required">
 	</div>
 		<a href="#" th:href="@{/index}"><p class="AccountmakeLink">すでにアカウントをお持ちですか？<span class="Fontcolor_Red">サインイン</span></p></a>
-		<input class="button" type="submit" value="次へ進む">
+		<input class="button" type="submit" value="アカウントを作成">
 	</form>
 </body>
 
