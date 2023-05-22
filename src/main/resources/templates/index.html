@@ -6,7 +6,6 @@
 	<title>ECcom</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" th:href="@{css/style.css}">
-	<link rel="stylesheet" th:href="@{css/style.css}">
 	<link rel="stylesheet" th:href="@{css/reset.css}">
 	<link rel="stylesheet" th:href="@{css/variable.css}">
 </head>
@@ -14,13 +13,13 @@
 <body>
 
 	<h1 class="Title" th:text="${message}"></h1>
-	<form class="Form" method="get" action="#" th:action="@{/index}" th:object="${users}">
+	<form class="Form" method="get" action="#" th:action="@{/top}" th:object="${users}">
 		<h2 class="Form_accountmake" th:text="${logMessa}">ログイン</h2>
 		<div class="Form_Box">
 			<p class="Form_Email">メールアドレス</p>
-			<input class="input" type="email" name="email" th:value="*{email}">
+			<input class="input" type="email" name="email" th:value="*{email}" required="required">
 			<p class="Form_Password">パスワード</p>
-			<input class="input" type="password" name="password" th:value="*{password}">
+			<input class="input" type="password" name="password" th:value="*{password}" required="required">
 		</div>
 		<input class="button" type="submit" value="次へ進む">
 	</form>
